@@ -1,0 +1,34 @@
+{
+  "Html": "/ManageCorporation.html",
+  "Id$": "",
+  "CreateOfficeEvent$": "",
+  "NewOffice$": "",
+  "Name$": "",
+  "Address$": {
+    "Street$": "",
+    "Number$": 0,
+    "ZipCode$": 0,
+    "City$": "",
+    "Country$": "",
+    "FullAddress$": ""
+  },
+  "OfficesNew$": [
+    {
+      "Id$": "",
+      "Name$": "",
+      "ParentId$" :  "",
+      "Address$": {
+        "Street$": "",
+        "Number$": 0,
+        "ZipCode$": 0,
+        "City$": "",
+        "Country$": "",
+        "FullAddress$": ""
+      },
+      "NumberOfHomesSold$": 0.0,
+      "TotalCommision$": 0.0,
+      "AverageCommision$": 0.0,
+      "Trend$": 0.0
+    }
+  ]
+}

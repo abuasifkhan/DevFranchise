@@ -1,0 +1,42 @@
+﻿<link rel="import" href="/sys/polymer/polymer.html">
+
+<template>
+    <template is="dom-bind">
+        <h3>Franchise offices</h3>
+        <h4>Sort on</h4>
+
+        <button value="{{model.CreateCorporationEvent$::click}}" onmousedown="++this.value">Number of Homes</button>
+        <button value="{{model.CreateCorporationEvent$::click}}" onmousedown="++this.value">Total Commission</button>
+        <button value="{{model.CreateCorporationEvent$::click}}" onmousedown="++this.value">Average Commission</button>
+        <button value="{{model.CreateCorporationEvent$::click}}" onmousedown="++this.value">Possitive Trend</button>
+        <hr/>
+        
+        <table style="width: 100%">
+            <tr>
+                <th>Name</th>
+                <th>Number of homes sold</th>
+                <th>Total Commission</th>
+                <th>Average Commission Trend</th>
+                <th>Trend</th>
+            </tr>
+            <template is="dom-repeat" items="{{model.OfficesNew$}}">
+                <tr>
+                    <td> <a href="/DeveloperTestFranchise/franchise/{{item.Id$}}">{{item.Name$}}</a></td>
+                    <td>{{item.NumberOfHomesSold$}}</td>
+                    <td>{{item.TotalCommision$}}</td>
+                    <td>{{item.AverageCommision$}}</td>
+                    <td>{{item.Trend$}}</td>
+                </tr>
+            </template>
+        </table>
+
+        <h3>New franchise office</h3>
+        <fieldset>
+            <label>Name:</label>
+            <input value="{{model.NewOffice$::input}}">
+        </fieldset>
+        <button value="{{model.CreateOfficeEvent$::click}}" onmousedown="++this.value">Create New</button>
+        <hr/><hr/>
+
+    </template>
+</template>
