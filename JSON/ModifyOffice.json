@@ -1,0 +1,45 @@
+{
+  "Html": "",
+  "CorporationAddressEvent$": 0,
+  "CorporationId$": "",
+  "OfficeId$": "",
+
+  "Corporation$": {
+    "Id$": "",
+    "Name$": "",
+    "Address$": {
+      "Street$": "",
+      "Number$": 0,
+      "ZipCode$": 0,
+      "City$": "",
+      "Country$": "",
+      "FullAddress$": ""
+    }
+  },
+
+  "Office$": {
+      "Id$": "",
+      "Name$": "",
+      "ParentId$": "",
+      "Address$": {
+        "Street$": "",
+        "Number$": 0,
+        "ZipCode$": 0,
+        "City$": "",
+        "Country$": "",
+        "FullAddress$": ""
+      },
+    
+      "Transactions": [
+        {
+          "Date$": "",
+          "SalesPrice$": 0,
+          "Commission$": 0.0   
+        }
+        ],
+      "NumberOfHomesSold$": 0,
+      "TotalCommision$": 0,
+      "AverageCommision$": 0,
+      "Trend$": 0
+      }
+}

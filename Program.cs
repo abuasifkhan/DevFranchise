@@ -22,8 +22,17 @@ namespace DevFranchise
         public int ZipCode;
         public string City;
         public string Country;
-        public string FullAddress => string.Format("{0} {1}, {2} {3}, {4}", Street, Number, ZipCode , City, Country);
+        public string FullAddress => $"{Street} {Number}, {ZipCode} {City}, {Country}";
 
+    }
+
+    [Database]
+    public class Transaction
+    {
+        public Address Address;
+        public string Data;
+        public int SalesPrice;
+        public double Commission;
     }
 
     [Database]
@@ -38,7 +47,7 @@ namespace DevFranchise
         public int TotalCommision;
         public double AverageCommision;
         public double Trend;
-
+        public Transaction Transaction;
     }
 
     [Database]
@@ -96,7 +105,7 @@ namespace DevFranchise
                     var json = new ManageCorporation()
                     {
                         Data = Corporation,
-                        //Html = @"/ManageCorporation.html",
+                        Html = @"/ManageCorporation.html",
                         //OfficesNew = offices
                     };
                     if (Session.Current == null)
@@ -109,6 +118,31 @@ namespace DevFranchise
                 });
             });
 
+            Handle.GET("/DeveloperTestFranchise/franchise/{?}", (string id) =>
+            {
+                return Db.Scope(() =>
+                {
+                    var Office =
+                        Db.SQL<Office>(
+                            "SELECT o FROM DevFranchise.Office o WHERE o.Id = ?", id).First;
+                    var Corporation =
+                        Db.SQL<Corporation>("SELECT co FROM DevFranchise.Corporation co WHERE co.Id = ?",
+                            Office.ParentId).First;
+                    var json = new ModifyOffice()
+                    {
+                        Html = @"/ModifyOffice.html",
+                        OfficeId = Office.Id,
+                        CorporationId = Office.ParentId
+                    };
+                    if (Session.Current == null)
+                    {
+                        Session.Current = new Session(SessionOptions.PatchVersioning);
+                    }
+                    json.Session = Session.Current;
+                    return json;
+
+                });
+            });
         }
     }
 }

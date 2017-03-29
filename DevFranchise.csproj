@@ -68,6 +68,9 @@
     <Compile Include="JSON\ManageCorporations.json.cs">
       <DependentUpon>ManageCorporations.json</DependentUpon>
     </Compile>
+    <Compile Include="JSON\ModifyOffice.json.cs">
+      <DependentUpon>ModifyOffice.json</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -78,6 +81,9 @@
     <TypedJSON Include="JSON\ManageCorporation.json">
       <Generator>MsBuild:Compile</Generator>
     </TypedJSON>
+    <TypedJSON Include="JSON\ModifyOffice.json">
+      <Generator>MsBuild:Compile</Generator>
+    </TypedJSON>
     <None Include="wwwroot\ManageCorporations.html" />
   </ItemGroup>
   <ItemGroup>
@@ -85,6 +91,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="wwwroot\ManageCorporation.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="wwwroot\ModifyOffice.html" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(StarcounterBin)\Starcounter.MsBuild.targets" />

@@ -40,17 +40,17 @@ namespace DevFranchise.JSON
         }
         void Handle(Input.TotalCommissionEvent action)
         {
-
+            OfficesNew = SortBy(TOTAL_COMMISSION);
             Transaction.Commit();
         }
         void Handle(Input.AverageCommissionEvent action)
         {
-
+            OfficesNew = SortBy(AVERAGE_COMMISSION);
             Transaction.Commit();
         }
         void Handle(Input.TrendEvent action)
         {
-
+            OfficesNew = SortBy(TREND);
             Transaction.Commit();
         }
 
