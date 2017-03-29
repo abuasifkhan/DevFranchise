@@ -16,7 +16,7 @@
     {
       "Id$": "",
       "Name$": "",
-      "ParentId$" :  "",
+      "ParentId$": "",
       "Address$": {
         "Street$": "",
         "Number$": 0,
@@ -25,10 +25,14 @@
         "Country$": "",
         "FullAddress$": ""
       },
-      "NumberOfHomesSold$": 0.0,
-      "TotalCommision$": 0.0,
-      "AverageCommision$": 0.0,
-      "Trend$": 0.0
+      "NumberOfHomesSold$": 0,
+      "TotalCommision$": 0,
+      "AverageCommision$": 0,
+      "Trend$": 0
     }
-  ]
+  ],
+  "HomesEvent$": 0,
+  "TotalCommissionEvent$": 0,
+  "AverageCommissionEvent$": 0,
+  "TrendEvent$": 0
 }

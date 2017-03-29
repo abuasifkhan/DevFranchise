@@ -15,10 +15,7 @@ using Sc.Server.Weaver.Schema;
 #pragma warning disable 1591
 
 namespace DevFranchise.JSON {
-using __MOfParentId__ = global::DevFranchise.JSON.ManageCorporation.OfficesNewElementJson.Input.ParentId;
 using __MOfTotalCom__ = global::DevFranchise.JSON.ManageCorporation.OfficesNewElementJson.Input.TotalCommision;
-using __MOfAverageC__ = global::DevFranchise.JSON.ManageCorporation.OfficesNewElementJson.Input.AverageCommision;
-using __MOfTrend__ = global::DevFranchise.JSON.ManageCorporation.OfficesNewElementJson.Input.Trend;
 using __TArray__ = global::Starcounter.Templates.TArray<global::DevFranchise.JSON.ManageCorporation.OfficesNewElementJson>;
 using __ManageCo1__ = global::DevFranchise.JSON.ManageCorporation.JsonByExample;
 using __MaAddressJ__ = global::DevFranchise.JSON.ManageCorporation.AddressJson;
@@ -27,8 +24,8 @@ using __MaAddressJ2__ = global::DevFranchise.JSON.ManageCorporation.AddressJson.
 using __MAdStreet__ = global::DevFranchise.JSON.ManageCorporation.AddressJson.Input.Street;
 using __MAdNumber__ = global::DevFranchise.JSON.ManageCorporation.AddressJson.Input.Number;
 using __MAdZipCode__ = global::DevFranchise.JSON.ManageCorporation.AddressJson.Input.ZipCode;
-using __MOfNumberOf__ = global::DevFranchise.JSON.ManageCorporation.OfficesNewElementJson.Input.NumberOfHomesSold;
 using __MAdCity__ = global::DevFranchise.JSON.ManageCorporation.AddressJson.Input.City;
+using __MAdCountry__ = global::DevFranchise.JSON.ManageCorporation.AddressJson.Input.Country;
 using __MAdFullAddr__ = global::DevFranchise.JSON.ManageCorporation.AddressJson.Input.FullAddress;
 using __Arr__ = global::Starcounter.Arr<global::DevFranchise.JSON.ManageCorporation.OfficesNewElementJson>;
 using __ManageCo2__ = global::DevFranchise.JSON.ManageCorporation.Input;
@@ -37,13 +34,17 @@ using __MaId__ = global::DevFranchise.JSON.ManageCorporation.Input.Id;
 using __MaCreateOf__ = global::DevFranchise.JSON.ManageCorporation.Input.CreateOfficeEvent;
 using __MaNewOffic__ = global::DevFranchise.JSON.ManageCorporation.Input.NewOffice;
 using __MaName__ = global::DevFranchise.JSON.ManageCorporation.Input.Name;
+using __MaHomesEve__ = global::DevFranchise.JSON.ManageCorporation.Input.HomesEvent;
+using __MaTotalCom__ = global::DevFranchise.JSON.ManageCorporation.Input.TotalCommissionEvent;
+using __MaAverageC__ = global::DevFranchise.JSON.ManageCorporation.Input.AverageCommissionEvent;
+using __MaTrendEve__ = global::DevFranchise.JSON.ManageCorporation.Input.TrendEvent;
 using s = Starcounter;
 using st = Starcounter.Templates;
 using _ScTemplate_ = Starcounter.Templates.Template;
-using __MAdCountry__ = global::DevFranchise.JSON.ManageCorporation.AddressJson.Input.Country;
-using _GEN1_ = System.Diagnostics.DebuggerNonUserCodeAttribute;
+using __MOfTrend__ = global::DevFranchise.JSON.ManageCorporation.OfficesNewElementJson.Input.Trend;
+using __MOfAverageC__ = global::DevFranchise.JSON.ManageCorporation.OfficesNewElementJson.Input.AverageCommision;
 using _GEN2_ = System.CodeDom.Compiler.GeneratedCodeAttribute;
-using __MOfId__ = global::DevFranchise.JSON.ManageCorporation.OfficesNewElementJson.Input.Id;
+using __MOfNumberOf__ = global::DevFranchise.JSON.ManageCorporation.OfficesNewElementJson.Input.NumberOfHomesSold;
 using __ManageCo__ = global::DevFranchise.JSON.ManageCorporation;
 using __Json__ = global::Starcounter.Json;
 using __TObject__ = global::Starcounter.Templates.TObject;
@@ -54,10 +55,9 @@ using __MAdSchema__ = global::DevFranchise.JSON.ManageCorporation.AddressJson.Js
 using __TLong__ = global::Starcounter.Templates.TLong;
 using __MaOfficesN__ = global::DevFranchise.JSON.ManageCorporation.OfficesNewElementJson;
 using __MOfSchema__ = global::DevFranchise.JSON.ManageCorporation.OfficesNewElementJson.JsonByExample.Schema;
-using __MOfName__ = global::DevFranchise.JSON.ManageCorporation.OfficesNewElementJson.Input.Name;
 using __MOAdSchema__ = global::DevFranchise.JSON.ManageCorporation.OfficesNewElementJson.AddressJson.JsonByExample.Schema;
+using _GEN1_ = System.Diagnostics.DebuggerNonUserCodeAttribute;
 using __MaOfficesN1__ = global::DevFranchise.JSON.ManageCorporation.OfficesNewElementJson.JsonByExample;
-using __MOfAddressJ__ = global::DevFranchise.JSON.ManageCorporation.OfficesNewElementJson.AddressJson;
 using __MOfAddressJ1__ = global::DevFranchise.JSON.ManageCorporation.OfficesNewElementJson.AddressJson.JsonByExample;
 using __MOfAddressJ2__ = global::DevFranchise.JSON.ManageCorporation.OfficesNewElementJson.AddressJson.Input;
 using __MOAdStreet__ = global::DevFranchise.JSON.ManageCorporation.OfficesNewElementJson.AddressJson.Input.Street;
@@ -67,7 +67,10 @@ using __MOAdCity__ = global::DevFranchise.JSON.ManageCorporation.OfficesNewEleme
 using __MOAdCountry__ = global::DevFranchise.JSON.ManageCorporation.OfficesNewElementJson.AddressJson.Input.Country;
 using __MOAdFullAddr__ = global::DevFranchise.JSON.ManageCorporation.OfficesNewElementJson.AddressJson.Input.FullAddress;
 using __MaOfficesN2__ = global::DevFranchise.JSON.ManageCorporation.OfficesNewElementJson.Input;
-using __TDecimal__ = global::Starcounter.Templates.TDecimal;
+using __MOfId__ = global::DevFranchise.JSON.ManageCorporation.OfficesNewElementJson.Input.Id;
+using __MOfName__ = global::DevFranchise.JSON.ManageCorporation.OfficesNewElementJson.Input.Name;
+using __MOfParentId__ = global::DevFranchise.JSON.ManageCorporation.OfficesNewElementJson.Input.ParentId;
+using __MOfAddressJ__ = global::DevFranchise.JSON.ManageCorporation.OfficesNewElementJson.AddressJson;
 
 #line hidden
 [_GEN1_][_GEN2_("Starcounter","2.0")]
@@ -143,6 +146,26 @@ public partial class ManageCorporation : __Json__ {
                 OfficesNew.Editable = true;
                 OfficesNew.SetCustomGetElementType((arr) => { return __MaOfficesN__.DefaultTemplate;});
                 OfficesNew.SetCustomAccessors((_p_) => { return ((__ManageCo__)_p_).__bf__OfficesNew__; }, (_p_, _v_) => { ((__ManageCo__)_p_).__bf__OfficesNew__ = (__Arr__)_v_; }, false);
+                HomesEvent = Add<__TLong__>("HomesEvent$");
+                HomesEvent.DefaultValue = 0L;
+                HomesEvent.Editable = true;
+                HomesEvent.SetCustomAccessors((_p_) => { return ((__ManageCo__)_p_).__bf__HomesEvent__; }, (_p_, _v_) => { ((__ManageCo__)_p_).__bf__HomesEvent__ = (System.Int64)_v_; }, false);
+                HomesEvent.AddHandler((Json pup, Property<Int64> prop, Int64 value) => { return (new Input.HomesEvent() { App = (ManageCorporation)pup, Template = (TLong)prop, Value = value }); }, (Json pup, Starcounter.Input<Int64> input) => { ((ManageCorporation)pup).Handle((Input.HomesEvent)input); });
+                TotalCommissionEvent = Add<__TLong__>("TotalCommissionEvent$");
+                TotalCommissionEvent.DefaultValue = 0L;
+                TotalCommissionEvent.Editable = true;
+                TotalCommissionEvent.SetCustomAccessors((_p_) => { return ((__ManageCo__)_p_).__bf__TotalCommissionEvent__; }, (_p_, _v_) => { ((__ManageCo__)_p_).__bf__TotalCommissionEvent__ = (System.Int64)_v_; }, false);
+                TotalCommissionEvent.AddHandler((Json pup, Property<Int64> prop, Int64 value) => { return (new Input.TotalCommissionEvent() { App = (ManageCorporation)pup, Template = (TLong)prop, Value = value }); }, (Json pup, Starcounter.Input<Int64> input) => { ((ManageCorporation)pup).Handle((Input.TotalCommissionEvent)input); });
+                AverageCommissionEvent = Add<__TLong__>("AverageCommissionEvent$");
+                AverageCommissionEvent.DefaultValue = 0L;
+                AverageCommissionEvent.Editable = true;
+                AverageCommissionEvent.SetCustomAccessors((_p_) => { return ((__ManageCo__)_p_).__bf__AverageCommissionEvent__; }, (_p_, _v_) => { ((__ManageCo__)_p_).__bf__AverageCommissionEvent__ = (System.Int64)_v_; }, false);
+                AverageCommissionEvent.AddHandler((Json pup, Property<Int64> prop, Int64 value) => { return (new Input.AverageCommissionEvent() { App = (ManageCorporation)pup, Template = (TLong)prop, Value = value }); }, (Json pup, Starcounter.Input<Int64> input) => { ((ManageCorporation)pup).Handle((Input.AverageCommissionEvent)input); });
+                TrendEvent = Add<__TLong__>("TrendEvent$");
+                TrendEvent.DefaultValue = 0L;
+                TrendEvent.Editable = true;
+                TrendEvent.SetCustomAccessors((_p_) => { return ((__ManageCo__)_p_).__bf__TrendEvent__; }, (_p_, _v_) => { ((__ManageCo__)_p_).__bf__TrendEvent__ = (System.Int64)_v_; }, false);
+                TrendEvent.AddHandler((Json pup, Property<Int64> prop, Int64 value) => { return (new Input.TrendEvent() { App = (ManageCorporation)pup, Template = (TLong)prop, Value = value }); }, (Json pup, Starcounter.Input<Int64> input) => { ((ManageCorporation)pup).Handle((Input.TrendEvent)input); });
             }
             public override object CreateInstance(s.Json parent) { return new __ManageCo__(this) { Parent = parent }; }
             public __TString__ Html;
@@ -152,6 +175,10 @@ public partial class ManageCorporation : __Json__ {
             public __TString__ Name;
             public __MAdSchema__ Address;
             public __TArray__ OfficesNew;
+            public __TLong__ HomesEvent;
+            public __TLong__ TotalCommissionEvent;
+            public __TLong__ AverageCommissionEvent;
+            public __TLong__ TrendEvent;
         }
         #line default
     }
@@ -243,6 +270,62 @@ public partial class ManageCorporation : __Json__ {
     #line hidden
     private __Arr__ __bf__OfficesNew__;
     #line default
+    #line hidden
+    private System.Int64 __bf__HomesEvent__;
+    #line default
+    [_GEN1_][_GEN2_("Starcounter","2.0")]
+    public System.Int64 HomesEvent {
+    #line 34 "JSON\ManageCorporation.json"
+        get {
+        #line hidden
+            return Template.HomesEvent.Getter(this); }
+        #line 34 "JSON\ManageCorporation.json"
+        set {
+        #line hidden
+            Template.HomesEvent.Setter(this, value); } }
+        #line default
+    #line hidden
+    private System.Int64 __bf__TotalCommissionEvent__;
+    #line default
+    [_GEN1_][_GEN2_("Starcounter","2.0")]
+    public System.Int64 TotalCommissionEvent {
+    #line 35 "JSON\ManageCorporation.json"
+        get {
+        #line hidden
+            return Template.TotalCommissionEvent.Getter(this); }
+        #line 35 "JSON\ManageCorporation.json"
+        set {
+        #line hidden
+            Template.TotalCommissionEvent.Setter(this, value); } }
+        #line default
+    #line hidden
+    private System.Int64 __bf__AverageCommissionEvent__;
+    #line default
+    [_GEN1_][_GEN2_("Starcounter","2.0")]
+    public System.Int64 AverageCommissionEvent {
+    #line 36 "JSON\ManageCorporation.json"
+        get {
+        #line hidden
+            return Template.AverageCommissionEvent.Getter(this); }
+        #line 36 "JSON\ManageCorporation.json"
+        set {
+        #line hidden
+            Template.AverageCommissionEvent.Setter(this, value); } }
+        #line default
+    #line hidden
+    private System.Int64 __bf__TrendEvent__;
+    #line default
+    [_GEN1_][_GEN2_("Starcounter","2.0")]
+    public System.Int64 TrendEvent {
+    #line 37 "JSON\ManageCorporation.json"
+        get {
+        #line hidden
+            return Template.TrendEvent.Getter(this); }
+        #line 37 "JSON\ManageCorporation.json"
+        set {
+        #line hidden
+            Template.TrendEvent.Setter(this, value); } }
+        #line default
     
     #line hidden
     [_GEN1_][_GEN2_("Starcounter","2.0")]
@@ -476,32 +559,32 @@ public partial class ManageCorporation : __Json__ {
                     ParentId.SetCustomAccessors((_p_) => { return ((__MaOfficesN__)_p_).__bf__ParentId__; }, (_p_, _v_) => { ((__MaOfficesN__)_p_).__bf__ParentId__ = (System.String)_v_; }, false);
                     Address = Add<__MOAdSchema__>("Address$");
                     Address.SetCustomAccessors((_p_) => { return ((__MaOfficesN__)_p_).__bf__Address__; }, (_p_, _v_) => { ((__MaOfficesN__)_p_).__bf__Address__ = (__MOfAddressJ__)_v_; }, false);
-                    NumberOfHomesSold = Add<__TDecimal__>("NumberOfHomesSold$");
-                    NumberOfHomesSold.DefaultValue = 0.0m;
+                    NumberOfHomesSold = Add<__TLong__>("NumberOfHomesSold$");
+                    NumberOfHomesSold.DefaultValue = 0L;
                     NumberOfHomesSold.Editable = true;
-                    NumberOfHomesSold.SetCustomAccessors((_p_) => { return ((__MaOfficesN__)_p_).__bf__NumberOfHomesSold__; }, (_p_, _v_) => { ((__MaOfficesN__)_p_).__bf__NumberOfHomesSold__ = (System.Decimal)_v_; }, false);
-                    TotalCommision = Add<__TDecimal__>("TotalCommision$");
-                    TotalCommision.DefaultValue = 0.0m;
+                    NumberOfHomesSold.SetCustomAccessors((_p_) => { return ((__MaOfficesN__)_p_).__bf__NumberOfHomesSold__; }, (_p_, _v_) => { ((__MaOfficesN__)_p_).__bf__NumberOfHomesSold__ = (System.Int64)_v_; }, false);
+                    TotalCommision = Add<__TLong__>("TotalCommision$");
+                    TotalCommision.DefaultValue = 0L;
                     TotalCommision.Editable = true;
-                    TotalCommision.SetCustomAccessors((_p_) => { return ((__MaOfficesN__)_p_).__bf__TotalCommision__; }, (_p_, _v_) => { ((__MaOfficesN__)_p_).__bf__TotalCommision__ = (System.Decimal)_v_; }, false);
-                    AverageCommision = Add<__TDecimal__>("AverageCommision$");
-                    AverageCommision.DefaultValue = 0.0m;
+                    TotalCommision.SetCustomAccessors((_p_) => { return ((__MaOfficesN__)_p_).__bf__TotalCommision__; }, (_p_, _v_) => { ((__MaOfficesN__)_p_).__bf__TotalCommision__ = (System.Int64)_v_; }, false);
+                    AverageCommision = Add<__TLong__>("AverageCommision$");
+                    AverageCommision.DefaultValue = 0L;
                     AverageCommision.Editable = true;
-                    AverageCommision.SetCustomAccessors((_p_) => { return ((__MaOfficesN__)_p_).__bf__AverageCommision__; }, (_p_, _v_) => { ((__MaOfficesN__)_p_).__bf__AverageCommision__ = (System.Decimal)_v_; }, false);
-                    Trend = Add<__TDecimal__>("Trend$");
-                    Trend.DefaultValue = 0.0m;
+                    AverageCommision.SetCustomAccessors((_p_) => { return ((__MaOfficesN__)_p_).__bf__AverageCommision__; }, (_p_, _v_) => { ((__MaOfficesN__)_p_).__bf__AverageCommision__ = (System.Int64)_v_; }, false);
+                    Trend = Add<__TLong__>("Trend$");
+                    Trend.DefaultValue = 0L;
                     Trend.Editable = true;
-                    Trend.SetCustomAccessors((_p_) => { return ((__MaOfficesN__)_p_).__bf__Trend__; }, (_p_, _v_) => { ((__MaOfficesN__)_p_).__bf__Trend__ = (System.Decimal)_v_; }, false);
+                    Trend.SetCustomAccessors((_p_) => { return ((__MaOfficesN__)_p_).__bf__Trend__; }, (_p_, _v_) => { ((__MaOfficesN__)_p_).__bf__Trend__ = (System.Int64)_v_; }, false);
                 }
                 public override object CreateInstance(s.Json parent) { return new __MaOfficesN__(this) { Parent = parent }; }
                 public __TString__ Id;
                 public __TString__ Name;
                 public __TString__ ParentId;
                 public __MOAdSchema__ Address;
-                public __TDecimal__ NumberOfHomesSold;
-                public __TDecimal__ TotalCommision;
-                public __TDecimal__ AverageCommision;
-                public __TDecimal__ Trend;
+                public __TLong__ NumberOfHomesSold;
+                public __TLong__ TotalCommision;
+                public __TLong__ AverageCommision;
+                public __TLong__ Trend;
             }
             #line default
         }
@@ -563,10 +646,10 @@ public partial class ManageCorporation : __Json__ {
                 Template.Address.Setter(this, value); } }
             #line default
         #line hidden
-        private System.Decimal __bf__NumberOfHomesSold__;
+        private System.Int64 __bf__NumberOfHomesSold__;
         #line default
         [_GEN1_][_GEN2_("Starcounter","2.0")]
-        public System.Decimal NumberOfHomesSold {
+        public System.Int64 NumberOfHomesSold {
         #line 28 "JSON\ManageCorporation.json"
             get {
             #line hidden
@@ -577,10 +660,10 @@ public partial class ManageCorporation : __Json__ {
                 Template.NumberOfHomesSold.Setter(this, value); } }
             #line default
         #line hidden
-        private System.Decimal __bf__TotalCommision__;
+        private System.Int64 __bf__TotalCommision__;
         #line default
         [_GEN1_][_GEN2_("Starcounter","2.0")]
-        public System.Decimal TotalCommision {
+        public System.Int64 TotalCommision {
         #line 29 "JSON\ManageCorporation.json"
             get {
             #line hidden
@@ -591,10 +674,10 @@ public partial class ManageCorporation : __Json__ {
                 Template.TotalCommision.Setter(this, value); } }
             #line default
         #line hidden
-        private System.Decimal __bf__AverageCommision__;
+        private System.Int64 __bf__AverageCommision__;
         #line default
         [_GEN1_][_GEN2_("Starcounter","2.0")]
-        public System.Decimal AverageCommision {
+        public System.Int64 AverageCommision {
         #line 30 "JSON\ManageCorporation.json"
             get {
             #line hidden
@@ -605,10 +688,10 @@ public partial class ManageCorporation : __Json__ {
                 Template.AverageCommision.Setter(this, value); } }
             #line default
         #line hidden
-        private System.Decimal __bf__Trend__;
+        private System.Int64 __bf__Trend__;
         #line default
         [_GEN1_][_GEN2_("Starcounter","2.0")]
-        public System.Decimal Trend {
+        public System.Int64 Trend {
         #line 31 "JSON\ManageCorporation.json"
             get {
             #line hidden
@@ -827,25 +910,25 @@ public partial class ManageCorporation : __Json__ {
             
             #line hidden
             [_GEN1_][_GEN2_("Starcounter","2.0")]
-            public class NumberOfHomesSold : Input<__MaOfficesN__, __TDecimal__, Decimal> {
+            public class NumberOfHomesSold : Input<__MaOfficesN__, __TLong__, long> {
             }
             #line default
             
             #line hidden
             [_GEN1_][_GEN2_("Starcounter","2.0")]
-            public class TotalCommision : Input<__MaOfficesN__, __TDecimal__, Decimal> {
+            public class TotalCommision : Input<__MaOfficesN__, __TLong__, long> {
             }
             #line default
             
             #line hidden
             [_GEN1_][_GEN2_("Starcounter","2.0")]
-            public class AverageCommision : Input<__MaOfficesN__, __TDecimal__, Decimal> {
+            public class AverageCommision : Input<__MaOfficesN__, __TLong__, long> {
             }
             #line default
             
             #line hidden
             [_GEN1_][_GEN2_("Starcounter","2.0")]
-            public class Trend : Input<__MaOfficesN__, __TDecimal__, Decimal> {
+            public class Trend : Input<__MaOfficesN__, __TLong__, long> {
             }
             #line default
         }
@@ -879,6 +962,26 @@ public partial class ManageCorporation : __Json__ {
         
         #line hidden
         public class Name : Input<__ManageCo__, __TString__, string> {
+        }
+        #line default
+        
+        #line hidden
+        public class HomesEvent : Input<__ManageCo__, __TLong__, long> {
+        }
+        #line default
+        
+        #line hidden
+        public class TotalCommissionEvent : Input<__ManageCo__, __TLong__, long> {
+        }
+        #line default
+        
+        #line hidden
+        public class AverageCommissionEvent : Input<__ManageCo__, __TLong__, long> {
+        }
+        #line default
+        
+        #line hidden
+        public class TrendEvent : Input<__ManageCo__, __TLong__, long> {
         }
         #line default
     }

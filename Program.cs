@@ -34,6 +34,10 @@ namespace DevFranchise
         public Address Address;
         public string Name;
         public string ParentId;
+        public int NumberOfHomesSold;
+        public int TotalCommision;
+        public double AverageCommision;
+        public double Trend;
 
     }
 
